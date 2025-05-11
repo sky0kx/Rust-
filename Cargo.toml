@@ -1,0 +1,22 @@
+[package]
+name = "rust-course"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+colored = "3"
+itertools = "0"
+rand = "0"
+sysinfo = "0"
+reqwest = { version = "0", features = ["blocking", "json"] }
+tokio = { version = "1", features = ["full"] }
+tokio-postgres = "0"
+time = "0"
+regex = "1"
+chrono = "0"
+log = "0"
+
+[dev-dependencies]
+tokio = { version = "1", features = ["rt-multi-thread", "macros"] }
